@@ -13,7 +13,8 @@ const useStyles = makeStyles(theme => {
       borderRadius: "40px",
       height: "60px",
       float: "left",
-      right: "50px"
+      right: "50px",
+      top: "250px"
     },
     arrow: {
       color: "white",
@@ -50,6 +51,7 @@ export default function LongMenu() {
       <Button
         className={classes.btnColor}
         style={{ backgroundColor: "#2C1646" }}
+        onClick={handleClick}
       >
         <KeyboardArrowRightIcon
           className={classes.arrow}

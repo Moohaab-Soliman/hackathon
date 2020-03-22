@@ -7,18 +7,20 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(theme => {
   return {
     body: {
-      backgroundColor: "#240043",
-      height: "720px"
+      backgroundColor: "#240043"
+      // height: "720px"
     },
     image: {
-      marginTop: "10%",
-      width: "20%"
+      marginTop: "5%",
+      width: "20%",
+      marginLeft: "34%",
+      borderRadius: "150px"
     },
     userName: {
-      marginTop: "1%",
+      marginTop: "2%",
       borderRadius: "40px",
-
-      width: "13%",
+      marginLeft: "42%",
+      width: "15%",
       height: "50px"
     }
   };
@@ -29,9 +31,14 @@ export default function ProfilePic() {
 
   return (
     <div className={classes.body}>
-      <img src={Profile} className={classes.image}></img>
       <div>
-        <Chip className={classes.userName} label="" />
+        <img
+          src="https://cdna.artstation.com/p/assets/images/images/009/723/852/large/metin-seven-metin-seven-3d-print-modeler-toy-character-designer-garfield-cartoon-comic-cat.jpg?1520528841"
+          // src={Profile}
+          className={classes.image}
+        ></img>
+
+        <Chip className={classes.userName} label="User Name" />
       </div>
     </div>
   );

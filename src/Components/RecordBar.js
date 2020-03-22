@@ -12,7 +12,7 @@ const useStyles = makeStyles(theme => {
   return {
     backGround: {
       right: "30%",
-      height: "40px",
+      height: "50px",
       width: "40%",
       backgroundColor: "#120027",
       //   padding: "10px ",
@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => {
     },
     playBtn: {
       color: "white",
-      margin: theme.spacing(0.3)
+      margin: theme.spacing(1)
     },
     groupLeft: {
       width: "1px",
@@ -36,7 +36,7 @@ const useStyles = makeStyles(theme => {
     groupRight: {
       width: "1px",
       float: "right",
-      marginRight: "100px",
+      marginRight: "120px",
       display: "flex"
     }
   };

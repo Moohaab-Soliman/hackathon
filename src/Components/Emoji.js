@@ -33,19 +33,11 @@ const useStyles = makeStyles(theme => {
       borderRadius: "150px"
     },
     btnSpecs: {
-      width: "15%",
+      width: "20%",
       height: "60px",
       color: "white",
-      marginTop: "50px",
+      marginTop: "60px",
       textTransform: "none"
-    },
-    textSpecs: {
-      color: "white",
-      //   wordSpacing: "220px",
-      display: ""
-    },
-    item1: {
-      left: "10px"
     }
   };
 });
@@ -75,10 +67,7 @@ export default function ProfilePic() {
       <Button className={classes.image}>
         <img src={Emotion5}></img>
       </Button>
-      <div className={classes.textSpecs}>
-        <one className={classes.item1}>hi</one>
-        <two>hi</two>
-      </div>
+      <div className={classes.textSpecs}></div>
 
       <div>
         <Button
@@ -87,7 +76,7 @@ export default function ProfilePic() {
         >
           Continue
         </Button>
-        <Record></Record>
+        {/* <Record></Record> */}
       </div>
     </div>
   );
